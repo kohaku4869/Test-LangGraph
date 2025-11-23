@@ -1,8 +1,8 @@
 from pydantic import BaseModel
-from typing import List,Dict, Annotated
+from typing import List,Dict, Optional
 from langgraph.graph.message import add_messages
 
-class State(BaseModel):
+class BlogPostState(BaseModel):
     topic: str
 
     outline: Optional[str] = None
