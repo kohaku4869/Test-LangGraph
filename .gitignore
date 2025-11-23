@@ -12,3 +12,4 @@ wheels/
 # Langchain
 .env
 
+post.md
