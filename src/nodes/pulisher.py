@@ -9,6 +9,7 @@ def publish_node(state: BlogPostState) -> BlogPostState:
     1. Đặt một tiêu đề thật kêu (Clickbait).
     2. Format bài viết thành Markdown chuẩn đẹp.
     3. Chỉ trả lời tiêu đề và bài viết, không trả lời thêm thông tin khác.
+    4. Nếu có thông tin nào bị thừa, không liên quan đến topic thì loại bỏ.
     """
     response = model.invoke(msg)
     state.final_content = response.content

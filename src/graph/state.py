@@ -11,5 +11,8 @@ class BlogPostState(BaseModel):
     fix_content: Optional[str] = None
     final_content: Optional[str] = None
 
+    revision_count: int = 0
+    reviewer_feedback: str = ""
+    reviewer_score: int = 0
 
 
